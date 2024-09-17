@@ -15,7 +15,6 @@
     <!-- <h1 class="text-5xl">Hello world!</h1> -->
     <header>
       <!-- Navbar -->
-
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -39,9 +38,11 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li><a>Home</a></li>
-              <li><a>Contact</a></li>
-              <li><a>About</a></li>
+              <li onclick="selectCategory(this)"><a>Beef</a></li>
+              <li onclick="selectCategory(this)"><a>Chicken</a></li>
+              <li onclick="selectCategory(this)"><a>Mutton</a></li>
+              <li onclick="selectCategory(this)"><a>Vegetables</a></li>
+              <li onclick="selectCategory(this)"><a>Rice</a></li>
             </ul>
           </div>
           <div class="hidden lg:flex items-center">
@@ -70,9 +71,11 @@
 
         <div class="navbar-end hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>Contact</a></li>
-            <li><a>About</a></li>
+            <li onclick="selectCategory(this)"><a>Beef</a></li>
+            <li onclick="selectCategory(this)"><a>Chicken</a></li>
+            <li onclick="selectCategory(this)"><a>Mutton</a></li>
+            <li onclick="selectCategory(this)"><a>Vegetables</a></li>
+            <li onclick="selectCategory(this)"><a>Rice</a></li>
           </ul>
         </div>
 
@@ -123,6 +126,11 @@
     </header>
 
     <main>
+      <!-- api section  -->
+      <div
+        id="load-meals-container"
+        class="grid lg:grid-cols-4 lg:gap-4 min-h-0.5"
+      ></div>
       <!-- FAQ/User Review section -->
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" checked="checked" />
@@ -213,6 +221,7 @@
         </p>
       </aside>
     </footer>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
 
