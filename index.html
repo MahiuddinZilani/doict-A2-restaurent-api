@@ -18,10 +18,10 @@
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class="btn lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                class="h-5 w-5 text-[#E83F96]"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -52,7 +52,10 @@
                 alt="logo"
                 class="w-30 h-20"
             /></a>
-            <a class="btn btn-ghost text-xl">Vabir Hotel</a>
+            <a
+              class="btn btn-ghost text-4xl font-bold text-[#E83F96] hover:text-white hover:bg-[#E83F96]"
+              >Vabir Hotel</a
+            >
           </div>
         </div>
 
@@ -66,7 +69,10 @@
         </div>
 
         <div class="navbar-end lg:hidden">
-          <a class="btn btn-ghost text-xl">Vabir Hotel</a>
+          <a
+            class="btn btn-ghost text-xl text-[#E83F96] hover:text-white hover:bg-[#E83F96]"
+            >Vabir Hotel</a
+          >
         </div>
 
         <div class="navbar-end hidden lg:flex">
@@ -78,10 +84,6 @@
             <li onclick="selectCategory(this)"><a>Rice</a></li>
           </ul>
         </div>
-
-        <!-- <div class="navbar-end">
-          <a class="btn">Button</a>
-        </div> -->
       </div>
 
       <!-- Banner (Carousel) -->
@@ -131,39 +133,62 @@
         id="load-meals-container"
         class="grid lg:grid-cols-4 lg:gap-4 min-h-0.5"
       ></div>
+      <div id="show-error" class=""></div>
       <!-- FAQ/User Review section -->
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+      <section class="mt-10">
+        <h1 class="text-center font-extrabold text-5xl mx-0 my-4">
+          FAQ (Frequently Asked Questions)
+        </h1>
+        <div class="collapse collapse-arrow text-[#E83F96]">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            1. What are your restaurant's hours of operation?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Answer: Our restaurant is open Monday to Friday from 11:00 AM to
+              10:00 PM, and on weekends from 9:00 AM to 11:00 PM. We also serve
+              brunch on Saturdays and Sundays from 9:00 AM to 2:00 PM. Please
+              check our website for any special holiday hours.
+            </p>
+          </div>
         </div>
-        <div class="collapse-content">
-          <p>hello</p>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            2. Do you offer vegetarian, vegan, or gluten-free options?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Answer: Yes, we offer a variety of vegetarian, vegan, and
+              gluten-free dishes. You can find them clearly labeled on our menu,
+              both in-house and online. If you have specific dietary concerns or
+              allergies, please let our staff know, and we will do our best to
+              accommodate your needs.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            3. Can I make a reservation online?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Answer: Absolutely! You can easily make a reservation through our
+              website by visiting the "Reservations" section. Alternatively, you
+              can call us directly to book a table. We recommend booking in
+              advance, especially on weekends and holidays, to ensure
+              availability.
+            </p>
+          </div>
         </div>
-        <div class="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
-        </div>
-        <div class="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer
-      class="footer footer-center bg-base-200 text-base-content rounded p-10"
+      class="footer footer-center mt-8 rounded p-10 bg-[#E83F96] text-white"
     >
       <nav class="grid grid-flow-col gap-4">
         <a class="link link-hover">About us</a>
