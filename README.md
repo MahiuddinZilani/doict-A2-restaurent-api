@@ -22,4 +22,4 @@ Vabir Hotel is a responsive web application that helps users find and explore di
 
 [Link 1](https://doict-a2-restaurent.surge.sh/)
 
-[Link 2](<[#](https://mahiuddinzilani.github.io/doict-A2-restaurent-api/)>)
+[Link 2](https://mahiuddinzilani.github.io/doict-A2-restaurent-api/)
