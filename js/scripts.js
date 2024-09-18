@@ -45,10 +45,13 @@ function showMeals(data, e = "All Category Foods") {
     childDiv.classList.add(
       "text-center",
       "font-bold",
-      "text-2xl",
+      "text-lg",
+      "md:text-2xl",
       "w-full",
-      "bg-[#E83F96]",
-      "py-8",
+      "bg-red-600",
+      "py-4",
+      "md:py-8",
+      "md:mx-0",
       "rounded-lg",
       "text-white"
     );
