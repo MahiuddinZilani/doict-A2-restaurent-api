@@ -15,7 +15,7 @@ function selectCategory(e) {
   //   console.log();
 }
 
-function showMeals(data, e = "All") {
+function showMeals(data, e = "All Category Foods") {
   const category = document.getElementById("category");
   category.innerHTML = "";
   const categoryName = document.createElement("p");
@@ -66,8 +66,13 @@ function showMeals(data, e = "All") {
                         alt="Meal" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">${element?.strMeal}</h2>
-                        <p>If a dog </p>
+                        <h2 class="card-title text-[#EEC6CF]">${
+                          element?.strMeal
+                        }</h2>
+                        <p class="text-[#E7E8F4]">${element?.strInstructions.slice(
+                          0,
+                          50
+                        )}....</p>
                     </div>
                 </div>
         `;
