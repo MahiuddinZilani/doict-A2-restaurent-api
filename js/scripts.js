@@ -29,14 +29,15 @@ function showMeals(data, e = "All Category Foods") {
   showError.innerHTML = "";
 
   parentDiv.classList.add(
-    "w-4/5",
-    "md:w-full",
+    "w-1/2",
+    "md:w-2/3",
+    "lg:w-full",
     "mx-auto",
     "grid",
     "md:grid-cols-2",
     "lg:grid-cols-4",
-    "gap-2",
-    "lg:gap-4"
+    "gap-4",
+    "lg:gap-6"
   );
 
   if (data === null) {
@@ -59,7 +60,7 @@ function showMeals(data, e = "All Category Foods") {
       const childDiv = document.createElement("div");
       childDiv.classList.add();
       childDiv.innerHTML = `
-                <div class="card card-compact h-64 lg:w-auto bg-[#E83F96] text-white shadow-xl">
+                <div class="card card-compact h-52 md:h-64 lg:w-auto bg-[#E83F96] text-white shadow-xl">
                     <figure>
                         <img
                         src=${element?.strMealThumb}
