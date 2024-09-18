@@ -251,59 +251,150 @@
         id="category"
         class="mx-0 text-xl lg:text-5xl text-[#E83F96] text-center font-semibold my-2 lg:my-4 underline"
       ></div>
-      <div id="load-meals-container" class=""></div>
+      <div id="load-meals-container" class="py-4 lg:py-8"></div>
       <div id="show-error" class=""></div>
 
       <!-- FAQ/User Review section -->
-      <section class="mt-10">
-        <h1 class="text-center font-extrabold lg:text-5xl mx-0 my-4">
-          FAQ (Frequently Asked Questions)
-        </h1>
-        <div class="collapse collapse-arrow">
-          <input type="radio" name="my-accordion-2" />
-          <div class="collapse-title text-xl font-medium text-[#E83F96]">
-            1. What are your restaurant's hours of operation?
+      <div>
+        <hr />
+        <section class="my-4">
+          <h1 class="text-center font-bold lg:text-4xl mx-0 my-4">
+            FAQ (Frequently Asked Questions)
+          </h1>
+          <div class="collapse collapse-arrow">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium text-[#E83F96]">
+              1. What are your restaurant's hours of operation?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Answer: Our restaurant is open Monday to Friday from 11:00 AM to
+                10:00 PM, and on weekends from 9:00 AM to 11:00 PM. We also
+                serve brunch on Saturdays and Sundays from 9:00 AM to 2:00 PM.
+                Please check our website for any special holiday hours.
+              </p>
+            </div>
           </div>
-          <div class="collapse-content">
-            <p>
-              Answer: Our restaurant is open Monday to Friday from 11:00 AM to
-              10:00 PM, and on weekends from 9:00 AM to 11:00 PM. We also serve
-              brunch on Saturdays and Sundays from 9:00 AM to 2:00 PM. Please
-              check our website for any special holiday hours.
-            </p>
+          <div class="collapse collapse-arrow">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium text-[#E83F96]">
+              2. Do you offer vegetarian, vegan, or gluten-free options?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Answer: Yes, we offer a variety of vegetarian, vegan, and
+                gluten-free dishes. You can find them clearly labeled on our
+                menu, both in-house and online. If you have specific dietary
+                concerns or allergies, please let our staff know, and we will do
+                our best to accommodate your needs.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium text-[#E83F96]">
+              3. Can I make a reservation online?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Answer: Absolutely! You can easily make a reservation through
+                our website by visiting the "Reservations" section.
+                Alternatively, you can call us directly to book a table. We
+                recommend booking in advance, especially on weekends and
+                holidays, to ensure availability.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+        <!-- User Review section -->
+        <div class="max-w-6xl mx-auto py-8 px-4 my-2">
+          <h2 class="lg:text-4xl font-bold text-center mb-6">
+            Customer Reviews
+          </h2>
+
+          <!-- Reviews Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Single Review -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <!-- User Info -->
+              <div class="flex items-center mb-4">
+                <img
+                  class="w-12 h-12 rounded-full object-cover mr-4"
+                  src="https://via.placeholder.com/150"
+                  alt="User Avatar"
+                />
+                <div>
+                  <h4 class="text-lg font-semibold">Abdur Rahim</h4>
+                  <p class="text-sm text-gray-600">September 15, 2024</p>
+                </div>
+              </div>
+
+              <!-- Review Text -->
+              <p class="text-gray-700 mb-4">
+                "The food was absolutely amazing! The ambiance was perfect, and
+                the service was top-notch. I will definitely be coming back."
+              </p>
+
+              <!-- Star Rating -->
+              <div class="flex items-center">
+                <span class="text-yellow-400">★★★★☆</span>
+                <span class="text-gray-600 text-sm ml-2">4.5/5</span>
+              </div>
+            </div>
+
+            <!-- Another Review -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div class="flex items-center mb-4">
+                <img
+                  class="w-12 h-12 rounded-full object-cover mr-4"
+                  src="https://via.placeholder.com/150"
+                  alt="User Avatar"
+                />
+                <div>
+                  <h4 class="text-lg font-semibold">Zulkar Nain</h4>
+                  <p class="text-sm text-gray-600">August 22, 2024</p>
+                </div>
+              </div>
+
+              <p class="text-gray-700 mb-4">
+                "Delicious meals with fast and friendly service. A fantastic
+                experience every time I visit!"
+              </p>
+
+              <div class="flex items-center">
+                <span class="text-yellow-400">★★★★★</span>
+                <span class="text-gray-600 text-sm ml-2">5/5</span>
+              </div>
+            </div>
+
+            <!-- Another Review -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div class="flex items-center mb-4">
+                <img
+                  class="w-12 h-12 rounded-full object-cover mr-4"
+                  src="https://via.placeholder.com/150"
+                  alt="User Avatar"
+                />
+                <div>
+                  <h4 class="text-lg font-semibold">Anwar Hossain</h4>
+                  <p class="text-sm text-gray-600">January 22, 2024</p>
+                </div>
+              </div>
+
+              <p class="text-gray-700 mb-4">
+                "A fantastic experience every time I visit!"
+              </p>
+
+              <div class="flex items-center">
+                <span class="text-yellow-400">★★★★★</span>
+                <span class="text-gray-600 text-sm ml-2">5/5</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="collapse collapse-arrow">
-          <input type="radio" name="my-accordion-2" />
-          <div class="collapse-title text-xl font-medium text-[#E83F96]">
-            2. Do you offer vegetarian, vegan, or gluten-free options?
-          </div>
-          <div class="collapse-content">
-            <p>
-              Answer: Yes, we offer a variety of vegetarian, vegan, and
-              gluten-free dishes. You can find them clearly labeled on our menu,
-              both in-house and online. If you have specific dietary concerns or
-              allergies, please let our staff know, and we will do our best to
-              accommodate your needs.
-            </p>
-          </div>
-        </div>
-        <div class="collapse collapse-arrow">
-          <input type="radio" name="my-accordion-2" />
-          <div class="collapse-title text-xl font-medium text-[#E83F96]">
-            3. Can I make a reservation online?
-          </div>
-          <div class="collapse-content">
-            <p>
-              Answer: Absolutely! You can easily make a reservation through our
-              website by visiting the "Reservations" section. Alternatively, you
-              can call us directly to book a table. We recommend booking in
-              advance, especially on weekends and holidays, to ensure
-              availability.
-            </p>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
 
     <!-- Footer -->
